@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('/img/imgtest3.jpg');
+  background-size: cover; /* Cover the entire body without distortion */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  background-attachment: fixed; /* Keep the background fixed while scrolling */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px; /* Add padding to the grid container */
+}
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+
+.card img {
+  width: 150px; /* Set a fixed width for the images */
+  height: 150px; /* Set a fixed height for the images */
+  border-radius: 60%;
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+.card h2 {
+  margin-top: 10px;
+}
+
+.card button {
+  background-color: burlywood;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-height: 80%; /* Ensure the modal doesn't exceed screen height */
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+}

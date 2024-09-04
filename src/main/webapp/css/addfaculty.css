@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 90vh;
+  width: 100%;
+  background: #009579;
+  background-image: url('/img/course-management-system-2.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  top: 79%; /* Adjust the vertical position as needed */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 70px; /* Reduce the max width to make the form smaller */
+  width: 80%;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  
+   height: 70vh;
+  padding: 1px; /* Adjust the padding to make the form elements smaller */
+}
+
+.container .form {
+  padding: 0.5rem;
+}
+
+.form header {
+  font-size: 0.8rem; /* Reduce font size */
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
+
+.form input {
+  height: 25px; /* Reduce the input field height */
+  width: 100%;
+  padding: 0 10px;
+  font-size: 14px; /* Reduce the font size */
+  margin-bottom: 0.5rem; /* Adjust the margin to decrease spacing */
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+}
+
+.form input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form a {
+  font-size: 14px; /* Reduce the font size */
+  color: #009579;
+  text-decoration: none;
+}
+
+.form a:hover {
+  text-decoration: underline;
+}
+
+.form input.button {
+  height: 40px; /* Reduce the button height */
+  color: #fff;
+  background: #009579;
+  font-size: 0.8rem; /* Reduce the font size */
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 0.25rem; /* Adjust the margin to decrease spacing */
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.form input.button:hover {
+  background: #006653;
+}
+
+.signup {
+  font-size: 14px; /* Reduce the font size */
+  text-align: center;
+}
+
+.signup label {
+  color: #009579;
+  cursor: pointer;
+}
+
+.signup label:hover {
+  text-decoration: underline;
+}

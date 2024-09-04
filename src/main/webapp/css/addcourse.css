@@ -1,0 +1,93 @@
+body {
+  min-height: 90vh;
+  width: 100%;
+  background: #009579;
+  background-image: url('/img/viewallstudentsbg.jpg'); /* Background image for the body */
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 50%; /* Center the container vertically */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px; /* Reduced max-width */
+  width: 90%; /* Reduced width */
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 1rem; /* Reduced padding */
+}
+
+.registration.form {
+  padding: 0.5rem; /* Reduced padding */
+}
+
+.registration.form header {
+  font-size: 1.2rem; /* Slightly smaller font size for header */
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem; /* Adjust margin to match form size */
+}
+
+.registration.form input {
+  height: 35px; /* Reduced height for input fields */
+  width: 100%;
+  padding: 0 8px; /* Reduced padding */
+  font-size: 0.9rem; /* Slightly smaller font size */
+  margin-bottom: 0.75rem; /* Adjust margin for compact spacing */
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+}
+
+.registration.form input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.registration.form input[type="file"] {
+  padding: 0; /* Remove extra padding for file inputs */
+  font-size: 0.9rem; /* Slightly smaller font size */
+}
+
+.registration.form .file-input-group {
+  margin-bottom: 0.75rem; /* Space between file input groups */
+}
+
+.registration.form .file-input-group label {
+  display: block; /* Make label take full width */
+  font-weight: 500;
+  margin-bottom: 0.25rem; /* Space between label and input */
+}
+
+.registration.form input[type="submit"].button {
+  height: 40px; /* Reduced button height */
+  color: #fff;
+  background: burlywood; /* Changed button color */
+  font-size: 1rem; /* Slightly smaller font size */
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 1rem; /* Space above the button */
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.registration.form input[type="submit"].button:hover {
+  background: #d2b48c; /* Slightly darker shade for hover effect */
+}
+
+/* Optional: Style for the background image */
+#background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Ensure it's behind the content */
+}

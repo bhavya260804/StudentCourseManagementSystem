@@ -1,0 +1,44 @@
+/* Resetting margin, padding, and setting full viewport height */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh; /* Ensures the body takes the full viewport height */
+}
+
+#background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  object-fit: cover; /* Ensures the image covers the whole area */
+  transform: scaleX(-1); /* Flips the image horizontally */
+  z-index: -1; /* Places image behind other content */
+}
+
+.topnav {
+  background-color:burlywood;
+  overflow: hidden;
+  width: 100%; /* Ensures the navigation bar spans the full width */
+  position: fixed; /* Keeps the navigation fixed at the top */
+  top: 0;
+  z-index: 1; /* Places navigation above the background image */
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  padding: 10px 20px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: orange;
+  color: black;
+}

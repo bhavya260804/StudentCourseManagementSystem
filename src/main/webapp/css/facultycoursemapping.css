@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: #009579;
+  background-image: url('/img/course-management-system-2.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  top: 50%; /* Center the form vertically */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 400px; /* Adjust the max width to control form width */
+  width: 80%;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px; /* Increase padding for better spacing */
+}
+
+.container .form {
+  padding: 1rem;
+}
+
+.form header {
+  font-size: 1.2rem; /* Increase font size */
+  font-weight: 500; /* Increase font weight */
+  text-align: center;
+  margin-bottom: 1rem; /* Increase margin for better separation */
+}
+
+.form select,
+.form input[type="number"] {
+  height: 40px; /* Adjust the input field height */
+  width: 100%;
+  padding: 10px;
+  font-size: 16px; /* Increase the font size */
+  margin-bottom: 1rem; /* Increase margin for better spacing */
+  border: 1px solid #009579;
+  border-radius: 6px;
+  outline: none;
+}
+
+.form select:focus,
+.form input[type="number"]:focus {
+  box-shadow: 0 0 5px #009579; /* Add a subtle focus effect */
+}
+
+.form label {
+  font-size: 16px; /* Increase label font size */
+  color: #009579;
+  margin-bottom: 0.5rem; /* Add margin for better spacing */
+}
+
+.form input.button {
+  height: 40px; /* Keep the button height consistent */
+  color: #fff;
+  background: #009579;
+  font-size: 1rem; /* Increase button font size */
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 1rem; /* Increase margin for better spacing */
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.form input.button:hover {
+  background: #006653;
+}
+
+.signup {
+  font-size: 14px; /* Reduce the font size */
+  text-align: center;
+}
+
+.signup label {
+  color: #009579;
+  cursor: pointer;
+}
+
+.signup label:hover {
+  text-decoration: underline;
+}
